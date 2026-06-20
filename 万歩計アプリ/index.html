@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランニングトラッカー</title>
+    <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+
+    <div class="tracker-app">
+        <h1>Running Tracker</h1>
+
+        <div class="display-container">
+            <div class="data-box">
+                <span class="label">走行時間</span>
+                <div id="time-display">0秒</div>
+            </div>
+            
+            <div class="data-box">
+                <span class="label">走行距離</span>
+                <div id="distance-display">0.00 km</div>
+            </div>
+
+            <div class="data-box">
+                <span class="label">平均速度</span>
+                <div id="speed-display">0.0 km/h</div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="start-btn">スタート</button>
+            <button id="stop-btn">ストップ</button>
+            <button id="save-btn">保存する</button>
+            <button id="clear-btn">リセット</button>
+        </div>
+    </div>
+    
+    <button id ="storage-btn">履歴を見る</button>
+
+    <div id="history-modal" class="modal-overlay">
+
+        <div class="modal-content">
+            <h2>🏃‍♂️ランニング履歴🏃‍♂️</h2>
+
+            <div id ="history-log-area">
+                <p class="empty-message">保存された記録はありません。</p>
+            </div>
+
+            <button id="close-modal-btn">閉じる</button>
+        </div>
+    </div>
+
+
+    
+<script src="timer.js"></script>
+</body>
+</html>
